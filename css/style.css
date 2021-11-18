@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@500;600;700&display=swap');
+
+:root{
+    --main-color : #1F4590;
+    --second-color : #FFA451;
+    --body-color : #D0FCFF;
+
+    --main-font: 'Open Sans', sans-serif;
+    --heading-font : 'Raleway', sans-serif;
+}
+
+body{
+    background-color: var(--body-color);
+    font-family: var(--main-font);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+section{
+    margin-top:-10px;
+}
+
+.container{
+    max-width: 1500px;
+}
+
+/* jnc service starts */
+.service .service-wrapper{
+    margin: auto;
+}
+.service-wrapper .row1{
+    text-align: center;
+}
+.service-wrapper .label-service{
+    font-size: 20px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--second-color);
+}
+.service-wrapper .heading-service{
+    font-size: 40px;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: #4a4a4a;
+    margin: 10px 0;
+}
+.service-wrapper .subheading-service{
+    font-size: 20px;
+   
+}
+.service-wrapper .row2{
+    margin-top: 10px;
+    background-color: var(--main-color);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.row2 .box-service{
+    position: relative;
+    max-width: 300px;
+    text-align: center;
+}
+.box-service i{
+    font-size: 2.5rem;
+    margin-top: 10px;
+}
+.box-service h3{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.box-service .btn-jnc{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#008e94;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+    transition: .4s ease-in-out;
+}
+.box-service:hover .btn-jnc{
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+    transition: .4s ease-in-out;
+}
+.btn-jnc a{
+    color: #fff;
+}
+/* jnc service ends */
+
+
